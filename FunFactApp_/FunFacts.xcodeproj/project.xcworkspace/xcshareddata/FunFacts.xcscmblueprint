@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "21ACE3C574FDF03BDC90EEF6DEABEE8B4BEDBF39",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "21ACE3C574FDF03BDC90EEF6DEABEE8B4BEDBF39" : 9223372036854775807,
+    "D894E047B0D8436D068BC039F47E9C340FC02531" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B7D2A294-7420-4485-A002-15317489768F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "21ACE3C574FDF03BDC90EEF6DEABEE8B4BEDBF39" : "FunFactApp\/",
+    "D894E047B0D8436D068BC039F47E9C340FC02531" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FunFacts",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FunFacts.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/weirdname404\/FunFactApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21ACE3C574FDF03BDC90EEF6DEABEE8B4BEDBF39"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/weirdname404\/SwiftLabs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D894E047B0D8436D068BC039F47E9C340FC02531"
+    }
+  ]
+}
