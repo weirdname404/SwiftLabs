@@ -14,6 +14,7 @@
 		3F7D9E681E4252FB006B0A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D9E671E4252FB006B0A43 /* Assets.xcassets */; };
 		3F7D9E6B1E4252FB006B0A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7D9E691E4252FB006B0A43 /* LaunchScreen.storyboard */; };
 		3F7D9E731E425770006B0A43 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D9E721E425770006B0A43 /* ActionViewController.swift */; };
+		BB2F47C91E48A40700D4C6EA /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2F47C81E48A40600D4C6EA /* ColorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3F7D9E6A1E4252FB006B0A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7D9E6C1E4252FB006B0A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7D9E721E425770006B0A43 /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		BB2F47C81E48A40600D4C6EA /* ColorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		3F7D9E5D1E4252FA006B0A43 /* Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				BB2F47C81E48A40600D4C6EA /* ColorProvider.swift */,
 				3F7D9E5E1E4252FA006B0A43 /* AppDelegate.swift */,
 				3F7D9E601E4252FA006B0A43 /* TrackViewController.swift */,
 				3F7D9E621E4252FA006B0A43 /* SliderViewController.swift */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7D9E631E4252FA006B0A43 /* SliderViewController.swift in Sources */,
+				BB2F47C91E48A40700D4C6EA /* ColorProvider.swift in Sources */,
 				3F7D9E5F1E4252FA006B0A43 /* AppDelegate.swift in Sources */,
 				3F7D9E731E425770006B0A43 /* ActionViewController.swift in Sources */,
 				3F7D9E611E4252FA006B0A43 /* TrackViewController.swift in Sources */,
@@ -305,6 +309,7 @@
 				3F7D9E711E4252FB006B0A43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
