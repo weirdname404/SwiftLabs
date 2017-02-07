@@ -19,22 +19,21 @@ class SliderViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var newColorButton: UIButton!
     
     @IBAction func generateNewColor(_ sender: Any) {
-        
-        let randomRed = Float(colorProvider.redColor)
-        let randomGreen = Float(colorProvider.greenColor)
-        let randomBlue = Float(colorProvider.blueColor)
-        
         view.backgroundColor = colorProvider.randomColor()
+        redColor = colorProvider.redColor
+        greenColor = colorProvider.greenColor
+        blueColor = colorProvider.blueColor
+
         
         // Updating text values
-        redValue.text = String(format: "%.0f", randomRed*255.0)
-        greenValue.text = String(format: "%.0f", randomGreen*255.0)
-        blueValue.text = String(format: "%.0f", randomBlue*255.0)
+        redValue.text = String(format: "%.0f", redColor*255.0)
+        greenValue.text = String(format: "%.0f", greenColor*255.0)
+        blueValue.text = String(format: "%.0f", blueColor*255.0)
         
         //Updating Sliders' values
-        redSlider.value = randomRed
-        greenSlider.value = randomGreen
-        blueSlider.value = randomBlue
+        redSlider.value = Float(redColor)
+        greenSlider.value = Float(greenColor)
+        blueSlider.value = Float(blueColor)
         
     }
     
