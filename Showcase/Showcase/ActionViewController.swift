@@ -52,11 +52,30 @@ class ActionViewController: UIViewController {
         showMeButton.setTitleColor(UIColor.white, for: UIControlState.normal)
         showMeButton.layer.cornerRadius = 4.0
         
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Fix!
+    func swiped(_ gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            if swipeGesture.direction == .right {
+                print("Right")
+                actionControl.setEnabled(true, forSegmentAt: 0)
+                actionControl.setEnabled(false, forSegmentAt: -1)
+
+            }
+            
+            if swipeGesture.direction == .left {
+                print("Left")
+                actionControl.setEnabled(true, forSegmentAt: -1)
+                actionControl.setEnabled(false, forSegmentAt: 0)
+            }
+        }
     }
     
 

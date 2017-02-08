@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB0F8E781E42084A00FA936E /* FactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F8E771E42084A00FA936E /* FactProvider.swift */; };
-		BBB0E1B51E40C9720076F249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0E1B41E40C9720076F249 /* AppDelegate.swift */; };
-		BBB0E1B71E40C9720076F249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0E1B61E40C9720076F249 /* ViewController.swift */; };
-		BBB0E1BA1E40C9720076F249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB0E1B81E40C9720076F249 /* Main.storyboard */; };
-		BBB0E1BC1E40C9720076F249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBB0E1BB1E40C9720076F249 /* Assets.xcassets */; };
-		BBB0E1BF1E40C9720076F249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB0E1BD1E40C9720076F249 /* LaunchScreen.storyboard */; };
-		BBD9871B1E44CCFC00A8EADB /* BackgroundProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD9871A1E44CCFC00A8EADB /* BackgroundProvider.swift */; };
+		3F9E190A1E4B8B1400061812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9E19091E4B8B1400061812 /* AppDelegate.swift */; };
+		3F9E190C1E4B8B1400061812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9E190B1E4B8B1400061812 /* ViewController.swift */; };
+		3F9E190F1E4B8B1400061812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E190D1E4B8B1400061812 /* Main.storyboard */; };
+		3F9E19111E4B8B1400061812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E19101E4B8B1400061812 /* Assets.xcassets */; };
+		3F9E19141E4B8B1400061812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E19121E4B8B1400061812 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB0F8E771E42084A00FA936E /* FactProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactProvider.swift; sourceTree = "<group>"; };
-		BBB0E1B11E40C9720076F249 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBB0E1B41E40C9720076F249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBB0E1B61E40C9720076F249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BBB0E1B91E40C9720076F249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BBB0E1BB1E40C9720076F249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BBB0E1BE1E40C9720076F249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BBB0E1C01E40C9720076F249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBD9871A1E44CCFC00A8EADB /* BackgroundProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundProvider.swift; sourceTree = "<group>"; };
+		3F9E19061E4B8B1400061812 /* InTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9E19091E4B8B1400061812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F9E190B1E4B8B1400061812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F9E190E1E4B8B1400061812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F9E19101E4B8B1400061812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F9E19131E4B8B1400061812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F9E19151E4B8B1400061812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BBB0E1AE1E40C9710076F249 /* Frameworks */ = {
+		3F9E19031E4B8B1400061812 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,83 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB0F8E761E41F75300FA936E /* Supporting Files */ = {
+		3F9E18FD1E4B8B1400061812 = {
 			isa = PBXGroup;
 			children = (
-				BBB0E1B41E40C9720076F249 /* AppDelegate.swift */,
-				BBB0E1BB1E40C9720076F249 /* Assets.xcassets */,
-				BBB0E1BD1E40C9720076F249 /* LaunchScreen.storyboard */,
-				BBB0E1C01E40C9720076F249 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BBB0E1A81E40C9710076F249 = {
-			isa = PBXGroup;
-			children = (
-				BBB0E1B31E40C9720076F249 /* FunFacts */,
-				BBB0E1B21E40C9720076F249 /* Products */,
+				3F9E19081E4B8B1400061812 /* InTouch */,
+				3F9E19071E4B8B1400061812 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BBB0E1B21E40C9720076F249 /* Products */ = {
+		3F9E19071E4B8B1400061812 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBB0E1B11E40C9720076F249 /* FunFacts.app */,
+				3F9E19061E4B8B1400061812 /* InTouch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBB0E1B31E40C9720076F249 /* FunFacts */ = {
+		3F9E19081E4B8B1400061812 /* InTouch */ = {
 			isa = PBXGroup;
 			children = (
-				BBD9871A1E44CCFC00A8EADB /* BackgroundProvider.swift */,
-				BB0F8E771E42084A00FA936E /* FactProvider.swift */,
-				BBB0E1B61E40C9720076F249 /* ViewController.swift */,
-				BBB0E1B81E40C9720076F249 /* Main.storyboard */,
-				BB0F8E761E41F75300FA936E /* Supporting Files */,
+				3F9E19091E4B8B1400061812 /* AppDelegate.swift */,
+				3F9E190B1E4B8B1400061812 /* ViewController.swift */,
+				3F9E190D1E4B8B1400061812 /* Main.storyboard */,
+				3F9E19101E4B8B1400061812 /* Assets.xcassets */,
+				3F9E19121E4B8B1400061812 /* LaunchScreen.storyboard */,
+				3F9E19151E4B8B1400061812 /* Info.plist */,
 			);
-			path = FunFacts;
+			path = InTouch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBB0E1B01E40C9710076F249 /* FunFacts */ = {
+		3F9E19051E4B8B1400061812 /* InTouch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBB0E1C31E40C9720076F249 /* Build configuration list for PBXNativeTarget "FunFacts" */;
+			buildConfigurationList = 3F9E19181E4B8B1400061812 /* Build configuration list for PBXNativeTarget "InTouch" */;
 			buildPhases = (
-				BBB0E1AD1E40C9710076F249 /* Sources */,
-				BBB0E1AE1E40C9710076F249 /* Frameworks */,
-				BBB0E1AF1E40C9710076F249 /* Resources */,
+				3F9E19021E4B8B1400061812 /* Sources */,
+				3F9E19031E4B8B1400061812 /* Frameworks */,
+				3F9E19041E4B8B1400061812 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FunFacts;
-			productName = FunFacts;
-			productReference = BBB0E1B11E40C9720076F249 /* FunFacts.app */;
+			name = InTouch;
+			productName = InTouch;
+			productReference = 3F9E19061E4B8B1400061812 /* InTouch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BBB0E1A91E40C9710076F249 /* Project object */ = {
+		3F9E18FE1E4B8B1400061812 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Alex Lebedev";
+				ORGANIZATIONNAME = HSE;
 				TargetAttributes = {
-					BBB0E1B01E40C9710076F249 = {
+					3F9E19051E4B8B1400061812 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5X5GB3C292;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = BBB0E1AC1E40C9710076F249 /* Build configuration list for PBXProject "FunFacts" */;
+			buildConfigurationList = 3F9E19011E4B8B1400061812 /* Build configuration list for PBXProject "InTouch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,56 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = BBB0E1A81E40C9710076F249;
-			productRefGroup = BBB0E1B21E40C9720076F249 /* Products */;
+			mainGroup = 3F9E18FD1E4B8B1400061812;
+			productRefGroup = 3F9E19071E4B8B1400061812 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBB0E1B01E40C9710076F249 /* FunFacts */,
+				3F9E19051E4B8B1400061812 /* InTouch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BBB0E1AF1E40C9710076F249 /* Resources */ = {
+		3F9E19041E4B8B1400061812 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB0E1BF1E40C9720076F249 /* LaunchScreen.storyboard in Resources */,
-				BBB0E1BC1E40C9720076F249 /* Assets.xcassets in Resources */,
-				BBB0E1BA1E40C9720076F249 /* Main.storyboard in Resources */,
+				3F9E19141E4B8B1400061812 /* LaunchScreen.storyboard in Resources */,
+				3F9E19111E4B8B1400061812 /* Assets.xcassets in Resources */,
+				3F9E190F1E4B8B1400061812 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BBB0E1AD1E40C9710076F249 /* Sources */ = {
+		3F9E19021E4B8B1400061812 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB0E1B71E40C9720076F249 /* ViewController.swift in Sources */,
-				BBB0E1B51E40C9720076F249 /* AppDelegate.swift in Sources */,
-				BBD9871B1E44CCFC00A8EADB /* BackgroundProvider.swift in Sources */,
-				BB0F8E781E42084A00FA936E /* FactProvider.swift in Sources */,
+				3F9E190C1E4B8B1400061812 /* ViewController.swift in Sources */,
+				3F9E190A1E4B8B1400061812 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BBB0E1B81E40C9720076F249 /* Main.storyboard */ = {
+		3F9E190D1E4B8B1400061812 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BBB0E1B91E40C9720076F249 /* Base */,
+				3F9E190E1E4B8B1400061812 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BBB0E1BD1E40C9720076F249 /* LaunchScreen.storyboard */ = {
+		3F9E19121E4B8B1400061812 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BBB0E1BE1E40C9720076F249 /* Base */,
+				3F9E19131E4B8B1400061812 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -180,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BBB0E1C11E40C9720076F249 /* Debug */ = {
+		3F9E19161E4B8B1400061812 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,10 +209,11 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BBB0E1C21E40C9720076F249 /* Release */ = {
+		3F9E19171E4B8B1400061812 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,33 +251,30 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		BBB0E1C41E40C9720076F249 /* Debug */ = {
+		3F9E19191E4B8B1400061812 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5X5GB3C292;
-				INFOPLIST_FILE = FunFacts/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				INFOPLIST_FILE = InTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexlebedev.FunFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcodaHSE.InTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		BBB0E1C51E40C9720076F249 /* Release */ = {
+		3F9E191A1E4B8B1400061812 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5X5GB3C292;
-				INFOPLIST_FILE = FunFacts/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				INFOPLIST_FILE = InTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexlebedev.FunFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcodaHSE.InTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,25 +283,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBB0E1AC1E40C9710076F249 /* Build configuration list for PBXProject "FunFacts" */ = {
+		3F9E19011E4B8B1400061812 /* Build configuration list for PBXProject "InTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBB0E1C11E40C9720076F249 /* Debug */,
-				BBB0E1C21E40C9720076F249 /* Release */,
+				3F9E19161E4B8B1400061812 /* Debug */,
+				3F9E19171E4B8B1400061812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBB0E1C31E40C9720076F249 /* Build configuration list for PBXNativeTarget "FunFacts" */ = {
+		3F9E19181E4B8B1400061812 /* Build configuration list for PBXNativeTarget "InTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBB0E1C41E40C9720076F249 /* Debug */,
-				BBB0E1C51E40C9720076F249 /* Release */,
+				3F9E19191E4B8B1400061812 /* Debug */,
+				3F9E191A1E4B8B1400061812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BBB0E1A91E40C9710076F249 /* Project object */;
+	rootObject = 3F9E18FE1E4B8B1400061812 /* Project object */;
 }

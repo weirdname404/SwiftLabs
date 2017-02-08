@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ways to get in touch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkz-be-Iw5">
+                                <rect key="frame" x="0.0" y="20" width="359" height="52"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="920-GB-6B5">
+                                <rect key="frame" x="161" y="80" width="37" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eDq-fX-ynm"/>
+                                </constraints>
+                                <state key="normal" title="Email"/>
+                                <connections>
+                                    <action selector="sendEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u2B-ro-UFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-GM-VBQ">
+                                <rect key="frame" x="132" y="124" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Az-ov-Lkl"/>
+                                </constraints>
+                                <state key="normal" title="Text Message"/>
+                                <connections>
+                                    <action selector="sendText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYk-9A-h4I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iva-Ar-b5t">
+                                <rect key="frame" x="151" y="172" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b6U-4e-0bH"/>
+                                </constraints>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="openWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suS-iv-Zfu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2bQ-GM-VBQ" firstAttribute="centerX" secondItem="Iva-Ar-b5t" secondAttribute="centerX" id="7Xk-vU-0hK"/>
+                            <constraint firstItem="zkz-be-Iw5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="D6y-Q3-qBz"/>
+                            <constraint firstItem="2bQ-GM-VBQ" firstAttribute="top" secondItem="920-GB-6B5" secondAttribute="bottom" constant="14" id="KO8-9f-1bg"/>
+                            <constraint firstItem="zkz-be-Iw5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MMW-eL-AgF"/>
+                            <constraint firstItem="Iva-Ar-b5t" firstAttribute="top" secondItem="2bQ-GM-VBQ" secondAttribute="bottom" constant="18" id="NmW-d4-vcc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Iva-Ar-b5t" secondAttribute="bottom" constant="465" id="PDs-db-0ht"/>
+                            <constraint firstItem="920-GB-6B5" firstAttribute="centerX" secondItem="2bQ-GM-VBQ" secondAttribute="centerX" id="YDe-Ca-mq9"/>
+                            <constraint firstItem="zkz-be-Iw5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bYj-YH-8GV"/>
+                            <constraint firstItem="zkz-be-Iw5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iI2-hS-nAh"/>
+                            <constraint firstItem="zkz-be-Iw5" firstAttribute="centerX" secondItem="920-GB-6B5" secondAttribute="centerX" id="q4j-AE-0wB"/>
+                            <constraint firstItem="920-GB-6B5" firstAttribute="top" secondItem="zkz-be-Iw5" secondAttribute="bottom" constant="8" symbolic="YES" id="qHD-WU-Xlg"/>
+                            <constraint firstItem="zkz-be-Iw5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wMS-uY-MXy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>

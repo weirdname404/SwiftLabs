@@ -74,6 +74,18 @@ class SliderViewController: UIViewController, UITextFieldDelegate {
         redValue.delegate = self
         greenValue.delegate = self
         blueValue.delegate = self
+        
+        if let colorData = UserDefaults.standard.object(forKey: "colors") as! Array<Double>? {
+            redSlider.value = Float(colorData[0])
+            greenSlider.value = Float(colorData[1])
+            blueSlider.value = Float(colorData[2])
+            changeRed(sender: self)
+            changeGreen(sender: self)
+            changeBlue(sender: self)
+        } else {
+            UserDefaults.standard.set([1.0, 1.0, 1.0], forKey: "colors")
+        }
+        
         updateColor()
         
         // Styling the button
@@ -91,6 +103,7 @@ class SliderViewController: UIViewController, UITextFieldDelegate {
     
     func updateColor() {
         self.view.backgroundColor = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+        UserDefaults.standard.set([redSlider.value, greenSlider.value, blueSlider.value], forKey: "colors")
         
     }
 
