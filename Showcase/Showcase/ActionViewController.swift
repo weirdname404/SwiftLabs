@@ -52,6 +52,14 @@ class ActionViewController: UIViewController {
         showMeButton.setTitleColor(UIColor.white, for: UIControlState.normal)
         showMeButton.layer.cornerRadius = 4.0
         
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ActionViewController.swiped(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(ActionViewController.swiped(_:)))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
+        
         
     }
 
@@ -64,16 +72,12 @@ class ActionViewController: UIViewController {
     func swiped(_ gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             if swipeGesture.direction == .right {
-                print("Right")
-                actionControl.setEnabled(true, forSegmentAt: 0)
-                actionControl.setEnabled(false, forSegmentAt: -1)
-
+                actionControl.selectedSegmentIndex = 0
             }
             
-            if swipeGesture.direction == .left {
-                print("Left")
-                actionControl.setEnabled(true, forSegmentAt: -1)
-                actionControl.setEnabled(false, forSegmentAt: 0)
+            else if swipeGesture.direction == .left {
+                actionControl.selectedSegmentIndex = 1
+
             }
         }
     }
