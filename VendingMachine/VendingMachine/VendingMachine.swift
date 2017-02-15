@@ -98,13 +98,15 @@ class FoodVendingMachine: VendingMachine {
         self.inventory = inventory
     }
     
+    
     func vend(_quantity: Int, _ selection: VendingSelection) throws {
-        <#code#>
+        print("")
     }
     
     func deposit(_ amount: Double) {
-        <#code#>
+        print("")
     }
+ 
 }
 
 
