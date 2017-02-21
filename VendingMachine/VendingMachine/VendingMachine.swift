@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum VendingSelection: String {
     case soda
@@ -21,6 +22,14 @@ enum VendingSelection: String {
     case fruitJuice
     case sportsDrink
     case gum
+    
+    func icon() -> UIImage {
+        if let image = UIImage(named: self.rawValue) {
+            return image
+        } else {
+            return #imageLiteral(resourceName: "default")
+        }
+    }
 }
 
 protocol VendingItem {
@@ -35,7 +44,7 @@ protocol VendingMachine {
     
     init(inventory: [VendingSelection: VendingItem])
     
-    func vend(_quantity: Int, _ selection: VendingSelection) throws
+    func vend(selection: VendingSelection, quantity: Int) throws
     func deposit(_ amount: Double)
     
 }
@@ -88,6 +97,12 @@ class InventoryUnarchiver {
     }
 }
 
+enum VendingMachineError: Error {
+    case invalidSelection
+    case outOfStock
+    case insufficientFunds(required: Double)
+}
+
 class FoodVendingMachine: VendingMachine {
     let selection: [VendingSelection] = [.soda, .dietSoda, .chips, .cookie, .sandwich, .wrap, .candyBar, .popTart, .popTart, .water, .fruitJuice, .sportsDrink, .gum]
     
@@ -99,8 +114,27 @@ class FoodVendingMachine: VendingMachine {
     }
     
     
-    func vend(_quantity: Int, _ selection: VendingSelection) throws {
-        print("")
+    func vend(selection: VendingSelection, quantity: Int) throws {
+        guard var item = inventory[selection] else {
+            throw VendingMachineError.invalidSelection
+        }
+        
+        guard item.quantity >= quantity else {
+            throw VendingMachineError.outOfStock
+        }
+        
+        let totalPrice = item.price * Double(quantity)
+        
+        if amountDeposited >= totalPrice {
+            amountDeposited -= totalPrice
+            
+            item.quantity -= quantity
+            
+            inventory.updateValue(item, forKey: selection)
+        } else {
+            let amountRequired = totalPrice - amountDeposited
+            throw VendingMachineError.insufficientFunds(required: amountRequired)
+        }
     }
     
     func deposit(_ amount: Double) {
