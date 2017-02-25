@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EF1BFB31E60FD7E00BBA12E /* DepositController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1BFB21E60FD7E00BBA12E /* DepositController.swift */; };
 		9771F6B51DF0833300B2B06D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771F6B41DF0833300B2B06D /* AppDelegate.swift */; };
 		9771F6B71DF0833300B2B06D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771F6B61DF0833300B2B06D /* ViewController.swift */; };
 		9771F6BA1DF0833300B2B06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9771F6B81DF0833300B2B06D /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7EF1BFB21E60FD7E00BBA12E /* DepositController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositController.swift; sourceTree = "<group>"; };
 		9771F6B11DF0833300B2B06D /* VendingMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9771F6B41DF0833300B2B06D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9771F6B61DF0833300B2B06D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,13 +62,14 @@
 		9771F6B31DF0833300B2B06D /* VendingMachine */ = {
 			isa = PBXGroup;
 			children = (
+				9771F6BB1DF0833300B2B06D /* Assets.xcassets */,
+				9771F6BD1DF0833300B2B06D /* LaunchScreen.storyboard */,
 				9771F6B41DF0833300B2B06D /* AppDelegate.swift */,
 				9771F6B61DF0833300B2B06D /* ViewController.swift */,
 				9771F6C61DF0A6C000B2B06D /* VendingItemCell.swift */,
 				BBEFD75A1E5467D100756DB9 /* VendingMachine.swift */,
+				7EF1BFB21E60FD7E00BBA12E /* DepositController.swift */,
 				9771F6B81DF0833300B2B06D /* Main.storyboard */,
-				9771F6BB1DF0833300B2B06D /* Assets.xcassets */,
-				9771F6BD1DF0833300B2B06D /* LaunchScreen.storyboard */,
 				9771F6C01DF0833300B2B06D /* Info.plist */,
 				9771F6CC1DF0D68E00B2B06D /* VendingInventory.plist */,
 			);
@@ -105,7 +108,7 @@
 				TargetAttributes = {
 					9771F6B01DF0833300B2B06D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = R9E84DX62H;
+						DevelopmentTeam = 5X5GB3C292;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -149,6 +152,7 @@
 			files = (
 				9771F6B71DF0833300B2B06D /* ViewController.swift in Sources */,
 				9771F6B51DF0833300B2B06D /* AppDelegate.swift in Sources */,
+				7EF1BFB31E60FD7E00BBA12E /* DepositController.swift in Sources */,
 				9771F6C71DF0A6C000B2B06D /* VendingItemCell.swift in Sources */,
 				BBEFD75B1E5467D200756DB9 /* VendingMachine.swift in Sources */,
 			);
@@ -273,12 +277,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R9E84DX62H;
+				DEVELOPMENT_TEAM = 5X5GB3C292;
 				INFOPLIST_FILE = VendingMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.VendingMachine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexLebedev.VendingMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -286,12 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R9E84DX62H;
+				DEVELOPMENT_TEAM = 5X5GB3C292;
 				INFOPLIST_FILE = VendingMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.VendingMachine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexLebedev.VendingMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
