@@ -8,12 +8,12 @@
 
 import UIKit
 
-fileprivate let reuseIdentifier = "tictactoeitem"
+fileprivate let reuseIdentifier = "tictactoecell"
 fileprivate let screenWidth = UIScreen.main.bounds.width
 
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -35,8 +35,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
         
         let padding: CGFloat = 10
-        let itemWidth = screenWidth/3 - padding
-        let itemHeight = screenWidth/3 - padding
+        let itemWidth = screenWidth/4 - padding
+        let itemHeight = screenWidth/4 - padding
         
         layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
         layout.minimumLineSpacing = 10
@@ -54,10 +54,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? TictactoeCell else { fatalError()}
+        cell.iconView.image = #imageLiteral(resourceName: "cross")
+        return cell
+    }
 
-    // MARK: - UICollectionViewDelegate
+    // MARK: - UICollectionViewDelegates
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? TictactoeCell else { fatalError()}
+        
+        cell.iconView.image = #imageLiteral(resourceName: "circle")
         print("touched")
     }
     

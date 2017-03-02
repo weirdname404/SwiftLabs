@@ -10,10 +10,6 @@ import UIKit
 
 class TictactoeCell: UICollectionViewCell {
 
-    
-    
-    
-    
-    
+    @IBOutlet weak var iconView: UIImageView!
 }
 
