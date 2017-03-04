@@ -5,6 +5,7 @@
 //  Created by MAC Home on 01.03.17.
 //  Copyright © 2017 HSE. All rights reserved.
 //
+// https://codeshare.io/29ORJX
 
 import UIKit
 
@@ -13,6 +14,8 @@ fileprivate let screenWidth = UIScreen.main.bounds.width
 
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    let player: Player
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -54,35 +57,33 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? TictactoeCell else { fatalError()}
-        cell.iconView.image = #imageLiteral(resourceName: "cross")
+        cell.iconView.image = nil
         return cell
     }
 
     // MARK: - UICollectionViewDelegates
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? TictactoeCell else { fatalError()}
         
-        cell.iconView.image = #imageLiteral(resourceName: "circle")
-        print("touched")
     }
     
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        updateCell(having: indexPath, selected: false, outOfStock: false)
-    }
+//    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+//        updateCell(having: indexPath, selected: false, outOfStock: false)
+//    }
     
-    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
-        updateCell(having: indexPath, selected: true, outOfStock: false)
-    }
+//    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+//        updateCell(having: indexPath, selected: true, outOfStock: false)
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+//        updateCell(having: indexPath, selected: false, outOfStock: false)
+//    }
     
-    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
-        updateCell(having: indexPath, selected: false, outOfStock: false)
-    }
-    
-    func updateCell(having indexPath: IndexPath, selected: Bool, outOfStock: Bool) {
+    func updateCell(having indexPath: IndexPath, cellIcon: String) {
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            let item = [indexPath.row]
+            cell.iconView.image = item.icon()
         
-        let selectedBackgroundColor = UIColor(red: 41/255.0, green: 211/255.0, blue: 241/255.0, alpha: 1.0)
-        let defaultBackgroundColor = UIColor(red: 27/255.0, green: 32/255.0, blue: 36/255.0, alpha: 1.0)
     }
 
     

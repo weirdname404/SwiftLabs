@@ -66,10 +66,42 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hNb-Ga-0EK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="55s-fJ-cYS"/>
-                            <constraint firstItem="hNb-Ga-0EK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="DSz-7c-Lxc"/>
+                            <constraint firstItem="hNb-Ga-0EK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="DSz-7c-Lxc"/>
+                            <constraint firstItem="hNb-Ga-0EK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="HLl-fg-cj2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hNb-Ga-0EK" secondAttribute="bottom" constant="20" id="I5Z-7N-ZAB"/>
+                            <constraint firstItem="hNb-Ga-0EK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="175" id="azZ-cJ-sOt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hNb-Ga-0EK" secondAttribute="trailing" constant="175" id="bOW-gO-JYI"/>
                             <constraint firstItem="hNb-Ga-0EK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-35" id="leL-n9-TWA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hNb-Ga-0EK" secondAttribute="bottom" constant="239" id="zBD-HM-ppc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="55s-fJ-cYS"/>
+                                <exclude reference="DSz-7c-Lxc"/>
+                                <exclude reference="HLl-fg-cj2"/>
+                                <exclude reference="azZ-cJ-sOt"/>
+                                <exclude reference="bOW-gO-JYI"/>
+                                <exclude reference="leL-n9-TWA"/>
+                                <exclude reference="I5Z-7N-ZAB"/>
+                                <exclude reference="zBD-HM-ppc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="DSz-7c-Lxc"/>
+                                <include reference="azZ-cJ-sOt"/>
+                                <include reference="bOW-gO-JYI"/>
+                                <include reference="I5Z-7N-ZAB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="55s-fJ-cYS"/>
+                                <include reference="HLl-fg-cj2"/>
+                                <include reference="leL-n9-TWA"/>
+                                <include reference="zBD-HM-ppc"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="hNb-Ga-0EK" id="Zei-Gq-mHr"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FCB9E1C1E6AE64C0069C3A2 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB9E1B1E6AE64C0069C3A2 /* GameLogic.swift */; };
 		7EF7727E1E66CAF7000DB8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF7727D1E66CAF7000DB8B2 /* AppDelegate.swift */; };
 		7EF772801E66CAF7000DB8B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF7727F1E66CAF7000DB8B2 /* ViewController.swift */; };
 		7EF772831E66CAF7000DB8B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF772811E66CAF7000DB8B2 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FCB9E1B1E6AE64C0069C3A2 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 		7EF7727A1E66CAF7000DB8B2 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF7727D1E66CAF7000DB8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF7727F1E66CAF7000DB8B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				7EF7727D1E66CAF7000DB8B2 /* AppDelegate.swift */,
-				7EF7727F1E66CAF7000DB8B2 /* ViewController.swift */,
+				3FCB9E1B1E6AE64C0069C3A2 /* GameLogic.swift */,
 				7EF7728F1E66E819000DB8B2 /* TictactoeCell.swift */,
+				7EF7727F1E66CAF7000DB8B2 /* ViewController.swift */,
 				7EF772811E66CAF7000DB8B2 /* Main.storyboard */,
 				7EF772841E66CAF7000DB8B2 /* Assets.xcassets */,
 				7EF772861E66CAF7000DB8B2 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				7EF772901E66E819000DB8B2 /* TictactoeCell.swift in Sources */,
 				7EF772801E66CAF7000DB8B2 /* ViewController.swift in Sources */,
+				3FCB9E1C1E6AE64C0069C3A2 /* GameLogic.swift in Sources */,
 				7EF7727E1E66CAF7000DB8B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +312,7 @@
 				7EF7728E1E66CAF7000DB8B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
