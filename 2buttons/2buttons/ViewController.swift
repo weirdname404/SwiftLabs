@@ -12,15 +12,14 @@ class ViewController: UIViewController {
     let greenColor = UIColor(red: 85/255.0, green: 176/255.0, blue: 112/255.0, alpha: 1.0)
     let redColor =  UIColor(red: 223/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1.0)
     let grayColor = UIColor(red: 204/255.0, green: 204/255.0, blue: 204/255.0, alpha: 1.0)
-    let font = UIFont(name: "HelveticaNeue-Bold", size: 75)
-    let basicFont = UIFont(name: "System-Regular", size: 40)
+    let font = UIFont(name: "HelveticaNeue-Bold", size: 90)
+    let basicFont = UIFont(name: "HelveticaNeue-Light", size: 45)
     var able = true
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var border: UIImageView!
-    
-    
+
     func changeColor(button1: UIButton, button2: UIButton, color: UIColor) {
         button1.setTitleColor(UIColor.white, for: .normal)
         button1.titleLabel!.font = font
@@ -40,7 +39,14 @@ class ViewController: UIViewController {
             newGame()
         }
     }
-    
+
+
+    @IBAction func turnButton1(_ sender: Any) {
+        turnButton(button1)
+        print("1")
+
+    }
+
     @IBAction func Button2(_ sender: UIButton) {
         if able{
             changeColor(button1: button2, button2: button1, color: redColor)
@@ -48,6 +54,24 @@ class ViewController: UIViewController {
         } else {
             newGame()
         }
+    }
+    
+
+    @IBAction func turnButton2(_ sender: Any) {
+        turnButton(button2)
+        print("2")
+    }
+
+    
+//    func longTap(sender: UIGestureRecognizer) {
+//        if sender.state == .ended {
+//            if sender == button1 {
+//                turnButton(button: button1)
+//            }}
+//    }
+    
+    func turnButton(_ button: UIButton) {
+        button.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
     }
     
     func newGame() {
@@ -68,9 +92,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        button1.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         button1.titleLabel!.font = basicFont
         button2.titleLabel!.font = basicFont
+        
+//        let tapGesture = UITapGestureRecognizer(target: self, action: Selector(("normalTap")))
+//        let longPressGesture = UILongPressGestureRecognizer(target: self, action: Selector(("longTap")))
+//        
+//        tapGesture.numberOfTapsRequired = 1
+//        
+//        button1.addGestureRecognizer(longPressGesture)
+//        button1.addGestureRecognizer(tapGesture)
+//        
+//        button2.addGestureRecognizer(longPressGesture)
+//        button2.addGestureRecognizer(tapGesture)
     }
 
     override func didReceiveMemoryWarning() {
