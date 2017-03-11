@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     let greenColor = UIColor(red: 85/255.0, green: 176/255.0, blue: 112/255.0, alpha: 1.0)
     let redColor =  UIColor(red: 223/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1.0)
     let grayColor = UIColor(red: 204/255.0, green: 204/255.0, blue: 204/255.0, alpha: 1.0)
-    let font = UIFont(name: "HelveticaNeue-Bold", size: 90)
-    let basicFont = UIFont(name: "HelveticaNeue-Light", size: 45)
+    let font = UIFont(name: "HelveticaNeue-Bold", size: 120)
+    let basicFont = UIFont(name: "HelveticaNeue-Light", size: 90)
     var able = true
     
     @IBOutlet weak var button1: UIButton!
