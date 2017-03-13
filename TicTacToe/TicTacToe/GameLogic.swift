@@ -8,7 +8,9 @@
 
 import UIKit
 
-enum cell: String {
+var board: [Int] = []
+
+enum cellSelection: String {
     case empty
     case cross
     case circle
@@ -20,32 +22,4 @@ enum cell: String {
             return #imageLiteral(resourceName: "default")
         }
     }
-}
-
-var board: [Int] = []
-
-protocol Player {
-    var turn: cell { get }
-    var goesFirst: Bool { get }
-    
-    func move(cellAt: Int)
-}
-
-class Computer {
-    var turn = cell.circle
-    var goesFirst = false
-    
-    func move(cellAt: Int) {
-        board.append(cellAt)
-    }
-}
-
-class Human {
-    var turn = cell.cross
-    var goesFirst = true
-    
-    func move(cellAt: Int) {
-        board.append(cellAt)
-}
-
 }

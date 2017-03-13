@@ -15,9 +15,9 @@ fileprivate let screenWidth = UIScreen.main.bounds.width
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    let player: Player
-    
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var currentTurn: cellSelection?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +42,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let itemHeight = screenWidth/4 - padding
         
         layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
-        layout.minimumLineSpacing = 10
-        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 5
+        layout.minimumInteritemSpacing = 5
         
         collectionView.collectionViewLayout = layout
     }
@@ -64,6 +64,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - UICollectionViewDelegates
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        updateCell(having: indexPath, crossGoesFirst: true)
         
     }
     
@@ -79,16 +80,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        updateCell(having: indexPath, selected: false, outOfStock: false)
 //    }
     
-    func updateCell(having indexPath: IndexPath, cellIcon: String) {
-        if let cell = collectionView.cellForItem(at: indexPath) {
-            let item = [indexPath.row]
-            cell.iconView.image = item.icon()
+    func updateCell(having indexPath: IndexPath, crossGoesFirst: Bool) {
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? TictactoeCell else { fatalError() }
+        
+        var cellImage = cell.iconView.image
+        
+        if cellImage == #imageLiteral(resourceName: "cross") || cell == #imageLiteral(resourceName: "circle") {
+            print("Kek")
+        }
+        
+        else if crossGoesFirst && cellImage == nil {
+        
+            cellImage = #imageLiteral(resourceName: "cross")
+        }
+        
+        else { cellImage = #imageLiteral(resourceName: "circle")}
+        
+//        if let cell = collectionView.cellForItem(at: indexPath) {
+        
+            
         
     }
-
-    
-
-
 
 }
 
