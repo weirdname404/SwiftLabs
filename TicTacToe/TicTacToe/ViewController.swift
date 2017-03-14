@@ -22,6 +22,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         setupCollectionViewCells()
     }
@@ -42,8 +44,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let itemHeight = screenWidth/4 - padding
         
         layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
-        layout.minimumLineSpacing = 5
-        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 2
         
         collectionView.collectionViewLayout = layout
     }
