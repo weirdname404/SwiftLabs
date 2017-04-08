@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     let greenColor = UIColor(red: 85/255.0, green: 176/255.0, blue: 112/255.0, alpha: 1.0)
     let redColor =  UIColor(red: 223/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1.0)
     let grayColor = UIColor(red: 204/255.0, green: 204/255.0, blue: 204/255.0, alpha: 1.0)
     let font = UIFont(name: "HelveticaNeue-Bold", size: 120)
     let basicFont = UIFont(name: "HelveticaNeue-Light", size: 90)
     var able = true
+    var able2 = true
+    var timer = Timer()
+    var timer2 = Timer()
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -34,33 +38,46 @@ class ViewController: UIViewController {
     @IBAction func Button1(_ sender: UIButton) {
         if able {
             changeColor(button1: button1, button2: button2, color: greenColor)
-            
-        } else {
-            newGame()
+            able = false
+            timer = Timer.scheduledTimer(timeInterval: 13, target: self, selector: #selector(self.newGame), userInfo: nil, repeats: false);
         }
     }
 
+//    @IBAction func turnButton1(_ sender: Any) {
+//        if able2 {
+//            turnButton(button1)
+//            able2 = false
+//            timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.dragTimer), userInfo: nil, repeats: false);
+//        }
+//    }
+//    
+//    func dragTimer() {
+//        able2 = true
+//    }
 
-    @IBAction func turnButton1(_ sender: Any) {
-        turnButton(button1)
-        print("1")
-
-    }
+//    @IBAction func turnButton1(_ sender: Any) {
+//        turnButton(button1)
+//        print("1")
+//
+//    }
 
     @IBAction func Button2(_ sender: UIButton) {
         if able{
             changeColor(button1: button2, button2: button1, color: redColor)
-            
-        } else {
-            newGame()
+            able = false
+            timer = Timer.scheduledTimer(timeInterval: 13, target: self, selector: #selector(self.newGame), userInfo: nil, repeats: false);
         }
     }
     
+    
 
-    @IBAction func turnButton2(_ sender: Any) {
-        turnButton(button2)
-        print("2")
-    }
+//    @IBAction func turnButton2(_ sender: Any) {
+//        if able2 {
+//            turnButton(button2)
+//            able2 = false
+//            timer2 = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.dragTimer), userInfo: nil, repeats: false);
+//        }
+//    }
 
     
 //    func longTap(sender: UIGestureRecognizer) {
@@ -71,8 +88,9 @@ class ViewController: UIViewController {
 //    }
     
     func turnButton(_ button: UIButton) {
-        button.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+            button.transform = button.transform.rotated(by: CGFloat.pi)
     }
+    
     
     func newGame() {
         able = true
@@ -94,6 +112,7 @@ class ViewController: UIViewController {
         
         button1.titleLabel!.font = basicFont
         button2.titleLabel!.font = basicFont
+        
         
 //        let tapGesture = UITapGestureRecognizer(target: self, action: Selector(("normalTap")))
 //        let longPressGesture = UILongPressGestureRecognizer(target: self, action: Selector(("longTap")))
@@ -119,6 +138,7 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             newGame()
+            timer.invalidate()
         }
     }
 }

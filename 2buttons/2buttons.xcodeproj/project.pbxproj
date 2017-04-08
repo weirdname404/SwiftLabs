@@ -304,6 +304,7 @@
 				3F34BA011E71B0B900251472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
