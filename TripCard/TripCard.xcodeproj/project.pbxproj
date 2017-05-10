@@ -63,19 +63,11 @@
 				3FE648141EA7C70C00602A36 /* TripCollectionViewCell.swift */,
 				3FE648171EA7CCED00602A36 /* Trip.swift */,
 				3FE648061EA7BA7F00602A36 /* Main.storyboard */,
-				3FE648161EA7C72C00602A36 /* Supporting Files */,
-			);
-			path = TripCard;
-			sourceTree = "<group>";
-		};
-		3FE648161EA7C72C00602A36 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				3FE648091EA7BA7F00602A36 /* Assets.xcassets */,
 				3FE6480B1EA7BA7F00602A36 /* LaunchScreen.storyboard */,
 				3FE6480E1EA7BA7F00602A36 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = TripCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +310,7 @@
 				3FE648131EA7BA7F00602A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

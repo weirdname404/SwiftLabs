@@ -6,12 +6,9 @@
 //  Copyright © 2017 HSE. All rights reserved.
 //
 
-import Foundation
-
 import UIKit
 
 struct Trip {
-    
     var tripId = ""
     var city = ""
     var country = ""
@@ -19,10 +16,7 @@ struct Trip {
     var price:Int = 0
     var totalDays:Int = 0
     var isLiked = false
-    
-    init(tripId: String, city: String, country: String, featuredImage:
-        UIImage!, price: Int, totalDays: Int, isLiked: Bool) {
-        
+    init(tripId: String, city: String, country: String, featuredImage: UIImage!, price: Int, totalDays: Int, isLiked: Bool) {
         self.tripId = tripId
         self.city = city
         self.country = country
@@ -30,7 +24,5 @@ struct Trip {
         self.price = price
         self.totalDays = totalDays
         self.isLiked = isLiked
-        
     }
-    
 }
