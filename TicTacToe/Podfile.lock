@@ -1,0 +1,19 @@
+PODS:
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.2.0)
+  - Socket.IO-Client-Swift (8.2.0)
+
+DEPENDENCIES:
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+  - Socket.IO-Client-Swift (~> 8.2.0)
+
+SPEC CHECKSUMS:
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+  Socket.IO-Client-Swift: 900cf511777045c80d1ce1f11f71261e87765dd1
+
+PODFILE CHECKSUM: 1c5e6c88345dacb29cdf048fcdfd99d2c97ed88d
+
+COCOAPODS: 1.2.0
