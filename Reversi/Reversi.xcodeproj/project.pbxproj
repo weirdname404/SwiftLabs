@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FC3AA9D1E5E006200FD6367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3AA9C1E5E006200FD6367 /* AppDelegate.swift */; };
+		3FC3AA9F1E5E006200FD6367 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3AA9E1E5E006200FD6367 /* ViewController.swift */; };
+		3FC3AAA21E5E006200FD6367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3AAA01E5E006200FD6367 /* Main.storyboard */; };
+		3FC3AAA41E5E006200FD6367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3AAA31E5E006200FD6367 /* Assets.xcassets */; };
+		3FC3AAA71E5E006200FD6367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3AAA51E5E006200FD6367 /* LaunchScreen.storyboard */; };
+		8EABDA301EDF5D3800BC7503 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EABDA2F1EDF5D3800BC7503 /* Logic.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FC3AA991E5E006200FD6367 /* Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC3AA9C1E5E006200FD6367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FC3AA9E1E5E006200FD6367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FC3AAA11E5E006200FD6367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FC3AAA31E5E006200FD6367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FC3AAA61E5E006200FD6367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FC3AAA81E5E006200FD6367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EABDA2F1EDF5D3800BC7503 /* Logic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC3AA961E5E006200FD6367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC3AA901E5E006200FD6367 = {
+			isa = PBXGroup;
+			children = (
+				3FC3AA9B1E5E006200FD6367 /* Reversi */,
+				3FC3AA9A1E5E006200FD6367 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC3AA9A1E5E006200FD6367 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3AA991E5E006200FD6367 /* Reversi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC3AA9B1E5E006200FD6367 /* Reversi */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3AA9C1E5E006200FD6367 /* AppDelegate.swift */,
+				3FC3AA9E1E5E006200FD6367 /* ViewController.swift */,
+				3FC3AAA01E5E006200FD6367 /* Main.storyboard */,
+				3FC3AAA31E5E006200FD6367 /* Assets.xcassets */,
+				3FC3AAA51E5E006200FD6367 /* LaunchScreen.storyboard */,
+				3FC3AAA81E5E006200FD6367 /* Info.plist */,
+				8EABDA2F1EDF5D3800BC7503 /* Logic.swift */,
+			);
+			path = Reversi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC3AA981E5E006200FD6367 /* Reversi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC3AAAB1E5E006200FD6367 /* Build configuration list for PBXNativeTarget "Reversi" */;
+			buildPhases = (
+				3FC3AA951E5E006200FD6367 /* Sources */,
+				3FC3AA961E5E006200FD6367 /* Frameworks */,
+				3FC3AA971E5E006200FD6367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reversi;
+			productName = Reversi;
+			productReference = 3FC3AA991E5E006200FD6367 /* Reversi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC3AA911E5E006200FD6367 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = HSE;
+				TargetAttributes = {
+					3FC3AA981E5E006200FD6367 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KT5C2J8UYH;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3FC3AA941E5E006200FD6367 /* Build configuration list for PBXProject "Reversi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FC3AA901E5E006200FD6367;
+			productRefGroup = 3FC3AA9A1E5E006200FD6367 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC3AA981E5E006200FD6367 /* Reversi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC3AA971E5E006200FD6367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3AAA71E5E006200FD6367 /* LaunchScreen.storyboard in Resources */,
+				3FC3AAA41E5E006200FD6367 /* Assets.xcassets in Resources */,
+				3FC3AAA21E5E006200FD6367 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC3AA951E5E006200FD6367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3AA9F1E5E006200FD6367 /* ViewController.swift in Sources */,
+				8EABDA301EDF5D3800BC7503 /* Logic.swift in Sources */,
+				3FC3AA9D1E5E006200FD6367 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FC3AAA01E5E006200FD6367 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC3AAA11E5E006200FD6367 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FC3AAA51E5E006200FD6367 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC3AAA61E5E006200FD6367 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FC3AAA91E5E006200FD6367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FC3AAAA1E5E006200FD6367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FC3AAAC1E5E006200FD6367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KT5C2J8UYH;
+				INFOPLIST_FILE = Reversi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weirdname404.Reversi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FC3AAAD1E5E006200FD6367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KT5C2J8UYH;
+				INFOPLIST_FILE = Reversi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = weirdname404.Reversi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC3AA941E5E006200FD6367 /* Build configuration list for PBXProject "Reversi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3AAA91E5E006200FD6367 /* Debug */,
+				3FC3AAAA1E5E006200FD6367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC3AAAB1E5E006200FD6367 /* Build configuration list for PBXNativeTarget "Reversi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3AAAC1E5E006200FD6367 /* Debug */,
+				3FC3AAAD1E5E006200FD6367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC3AA911E5E006200FD6367 /* Project object */;
+}
